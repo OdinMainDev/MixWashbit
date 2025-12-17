@@ -308,6 +308,7 @@
 
 .section-inner {
   display: block;
+  overflow: hidden;
   background: radial-gradient(80% 60% at 20% 10%, rgba(255, 190, 120, 0.22), transparent),
     radial-gradient(60% 50% at 80% 0%, rgba(255, 175, 110, 0.22), transparent),
     rgba(255, 247, 236, 0.92);
@@ -1121,16 +1122,16 @@
   max-width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
+  scrollbar-width: auto;
+  scrollbar-color: rgba(255, 182, 73, 0.7) rgba(255, 237, 213, 0.7);
   overscroll-behavior-x: contain;
   overscroll-behavior-y: contain;
   touch-action: pan-x;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory;
 }
 
 .timeline-wrapper {
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .timeline-shell::-webkit-scrollbar {
@@ -1153,20 +1154,19 @@
 .timeline {
   position: relative;
   margin: 0;
-  padding: clamp(3.75rem, 5vw, 5.5rem) 1.2rem clamp(4rem, 5vw, 6rem);
-  display: flex;
-  gap: 2.4rem;
+  padding: clamp(4.25rem, 6vw, 6rem) 1.4rem clamp(4.5rem, 6vw, 6.4rem);
+  display: inline-flex;
+  gap: 2.6rem;
   width: max-content;
-  min-width: max(100%, calc(260px * 6));
-  align-items: center;
-  position: relative;
-  scroll-snap-type: x mandatory;
+  min-width: 100%;
+  align-items: stretch;
+  justify-content: center;
 }
 
 .timeline-line {
   position: absolute;
-  left: 0.5rem;
-  right: 0.5rem;
+  left: 1.4rem;
+  right: 1.4rem;
   top: 50%;
   transform: translateY(-50%);
   height: 3px;
@@ -1176,53 +1176,39 @@
   z-index: 0;
 }
 
-.timeline-node {
+.timeline-item {
   position: relative;
-  display: grid;
-  grid-template-rows: 1fr auto 1fr;
+  display: flex;
   align-items: center;
-  justify-items: center;
-  padding: clamp(4.75rem, 6vw, 7.5rem) 0;
-  min-width: 240px;
-  max-width: 300px;
+  justify-content: center;
+  padding: clamp(5.25rem, 7vw, 8rem) 0;
+  min-width: 220px;
+  max-width: 260px;
   scroll-snap-align: center;
   z-index: 1;
+}
+
+.timeline-content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
-  gap: 0.35rem;
-}
-
-.timeline-top,
-.timeline-bottom {
   max-width: 260px;
-  grid-row: 1;
+  color: #2f1a07;
 }
 
-.timeline-dot {
-  grid-row: 2;
+.timeline-content.top {
+  bottom: clamp(50% + 1.1rem, 45% + 1vw, 50% + 1.4rem);
 }
 
-.timeline-bottom {
-  grid-row: 3;
+.timeline-content.bottom {
+  top: clamp(50% + 1.1rem, 45% + 1vw, 50% + 1.4rem);
 }
 
-.timeline-node.even .timeline-top {
-  grid-row: 1;
-  margin-bottom: 1rem;
-}
-
-.timeline-node.even .timeline-bottom {
-  grid-row: 3;
-  margin-top: 1rem;
-}
-
-.timeline-node.odd .timeline-top {
-  grid-row: 3;
-  margin-top: 1rem;
-}
-
-.timeline-node.odd .timeline-bottom {
-  grid-row: 1;
-  margin-bottom: 1rem;
+.timeline-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
 }
 .timeline-desktop {
   display: block;
@@ -1881,19 +1867,6 @@
     left: 1.4rem;
     right: 1.4rem;
   }
-
-  .timeline-node {
-    flex-direction: row;
-    min-width: 220px;
-    max-width: 260px;
-    padding: clamp(4.75rem, 6vw, 7.5rem) 0;
-    scroll-snap-align: center;
-  }
-
-  .timeline-top,
-  .timeline-bottom {
-    max-width: 260px;
-  }
 }
 
 .site-footer {
@@ -2224,6 +2197,13 @@
 
   .exchange-form {
     padding: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    border: unset;
+  }
+
+  .primary-btn {
+    width: 100%;
   }
 
   .form-grid {
@@ -2268,36 +2248,6 @@
 
   .timeline-line {
     display: none;
-  }
-
-  .timeline-desktop {
-    display: none;
-  }
-
-  .timeline-mobile {
-    display: block;
-  }
-
-  .timeline-node {
-    width: 100%;
-    min-width: auto;
-    max-width: none;
-    padding: 0.5rem 0;
-    flex-direction: column;
-    scroll-snap-align: none;
-  }
-
-  .timeline-top,
-  .timeline-bottom {
-    max-width: 100%;
-  }
-
-  .timeline-title h3 {
-    font-size: 0.95rem;
-  }
-
-  .timeline-desc p {
-    font-size: 0.85rem;
   }
 
   .timeline-desktop {

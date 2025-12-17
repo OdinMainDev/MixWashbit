@@ -128,22 +128,22 @@ const HowItWorks = () => {
               <div className="timeline">
                 <div className="timeline-line" aria-hidden="true" />
                 {steps.map((step, index) => {
-                  const isEven = index % 2 === 0
+                  const side = index % 2 === 0 ? 'even' : 'odd'
                   const titleBlock = (
-                    <div className="timeline-title">
+                    <div className="timeline-block title-block">
                       <h3>{step.title}</h3>
                     </div>
                   )
                   const descBlock = (
-                    <div className="timeline-desc">
+                    <div className="timeline-block desc-block">
                       <p>{step.description}</p>
                     </div>
                   )
                   return (
-                    <div key={step.title} className={`timeline-node ${isEven ? 'even' : 'odd'}`}>
-                      <div className="timeline-top">{isEven ? titleBlock : descBlock}</div>
+                    <div key={step.title} className={`timeline-item ${side}`}>
+                      <div className="timeline-content top">{side === 'even' ? titleBlock : descBlock}</div>
                       <div className="timeline-dot">{icons[index % icons.length]}</div>
-                      <div className="timeline-bottom">{isEven ? descBlock : titleBlock}</div>
+                      <div className="timeline-content bottom">{side === 'even' ? descBlock : titleBlock}</div>
                     </div>
                   )
                 })}
