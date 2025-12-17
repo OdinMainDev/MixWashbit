@@ -65,49 +65,77 @@ const ExchangeForm = ({ onSuccess }: ExchangeFormProps) => {
             </div>
 
             <form className="exchange-form" onSubmit={handleSubmit}>
-              <label className="field-label" htmlFor="address">
-                {t('hero.fromPlaceholder')}
-              </label>
-              <input
-                id="address"
-                className="field"
-                name="address"
-                placeholder={t('hero.fromPlaceholder') ?? ''}
-                type="text"
-                required
-              />
-              {showAdditional && (
-                <>
-                  <label className="field-label" htmlFor="address_additional">
-                    {t('hero.additionalPlaceholder')}
-                  </label>
-                  <input
-                    id="address_additional"
-                    className="field"
-                    name="address_additional"
-                    placeholder={t('hero.additionalPlaceholder') ?? ''}
-                    type="text"
-                  />
-                </>
-              )}
-              {!showAdditional && (
-                <button
-                  type="button"
-                  className="ghost-btn"
-                  onClick={() => setShowAdditional(true)}
-                >
-                  {t('hero.splitButton')}
-                </button>
-              )}
-              {error && <div className="error-card">{error}</div>}
-              <button className="primary-btn" type="submit" disabled={loading}>
-                {loading ? t('hero.loading') : t('hero.cta')}
-              </button>
-              <p className="form-note">{t('hero.note')}</p>
+              <div className="form-banner">
+                <div className="banner-chip">01</div>
+                <div className="banner-copy">
+                  <strong>{t('hero.panelTitle')}</strong>
+                  <span>{t('hero.panelDescription')}</span>
+                </div>
+                <div className="eta-chip">≈ 3–6h</div>
+              </div>
+
+              <div className="form-grid">
+                <div className="form-fields">
+                  <div className="field-stack">
+                    <label className="field-label" htmlFor="address">
+                      {t('hero.fromPlaceholder')}
+                    </label>
+                    <input
+                      id="address"
+                      className="field"
+                      name="address"
+                      placeholder={t('hero.fromPlaceholder') ?? ''}
+                      type="text"
+                      required
+                    />
+                  </div>
+
+                  {showAdditional && (
+                    <div className="field-stack">
+                      <label className="field-label" htmlFor="address_additional">
+                        {t('hero.additionalPlaceholder')}
+                      </label>
+                      <input
+                        id="address_additional"
+                        className="field"
+                        name="address_additional"
+                        placeholder={t('hero.additionalPlaceholder') ?? ''}
+                        type="text"
+                      />
+                    </div>
+                  )}
+
+                  {!showAdditional && (
+                    <button
+                      type="button"
+                      className="ghost-btn add-field-btn"
+                      onClick={() => setShowAdditional(true)}
+                    >
+                      <span className="add-field-icon">＋</span>
+                      {t('hero.splitButton')}
+                    </button>
+                  )}
+
+                  {error && <div className="error-card">{error}</div>}
+
+                  <div className="form-actions">
+                    <button className="primary-btn" type="submit" disabled={loading}>
+                      {loading ? t('hero.loading') : t('hero.cta')}
+                    </button>
+                    <p className="form-note">{t('hero.note')}</p>
+                  </div>
+                </div>
+
+                <div className="form-aside">
+                  <div className="aside-card">
+                    <p className="aside-title">{t('hero.cleaningCaption')}</p>
+                    <div className="hero-inline-compare">
+                      <ExampleCompare inline />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </form>
-            <div className="hero-inline-compare">
-              <ExampleCompare inline />
-            </div>
           </div>
 
           <div className="hero-anim-wrap">
