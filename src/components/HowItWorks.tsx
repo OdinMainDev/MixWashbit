@@ -119,33 +119,48 @@ const HowItWorks = () => {
 
   return (
     <FadeInSection id="how" className="section">
-      <div className="section-inner overflow-hidden">
+      <div className="section-inner">
         <h2 className="section-title">{t('how.title')}</h2>
         {description && <p className="section-description">{description}</p>}
-        <div className="timeline-shell" ref={scrollRef}>
-          <div className="timeline">
-            <div className="timeline-line" aria-hidden="true" />
-            {steps.map((step, index) => {
-              const side = index % 2 === 0 ? 'even' : 'odd'
-              const titleBlock = (
-                <div className="timeline-block title-block">
-                  <span className="timeline-index">0{index + 1}</span>
-                  <h3>{step.title}</h3>
-                </div>
-              )
-              const descBlock = (
-                <div className="timeline-block desc-block">
-                  <p>{step.description}</p>
-                </div>
-              )
-              return (
-                <div key={step.title} className={`timeline-item ${side}`}>
-                  <div className="timeline-content top">{side === 'even' ? titleBlock : descBlock}</div>
-                  <div className="timeline-dot">{icons[index % icons.length]}</div>
-                  <div className="timeline-content bottom">{side === 'even' ? descBlock : titleBlock}</div>
-                </div>
-              )
-            })}
+        <div className="timeline-wrapper">
+          <div className="timeline-desktop">
+            <div className="timeline-shell" ref={scrollRef}>
+              <div className="timeline">
+                <div className="timeline-line" aria-hidden="true" />
+                {steps.map((step, index) => {
+                  const isEven = index % 2 === 0
+                  const titleBlock = (
+                    <div className="timeline-title">
+                      <h3>{step.title}</h3>
+                    </div>
+                  )
+                  const descBlock = (
+                    <div className="timeline-desc">
+                      <p>{step.description}</p>
+                    </div>
+                  )
+                  return (
+                    <div key={step.title} className={`timeline-node ${isEven ? 'even' : 'odd'}`}>
+                      <div className="timeline-top">{isEven ? titleBlock : descBlock}</div>
+                      <div className="timeline-dot">{icons[index % icons.length]}</div>
+                      <div className="timeline-bottom">{isEven ? descBlock : titleBlock}</div>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="timeline-mobile">
+          <div className="mobile-timeline">
+            {steps.map((step, index) => (
+              <div key={step.title} className="mobile-step">
+                <span className="mobile-index">0{index + 1}</span>
+                <h3 className="mobile-title">{step.title}</h3>
+                <p className="mobile-desc">{step.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
