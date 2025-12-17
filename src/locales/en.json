@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "tor": "TOR version",
+    "advantages": "Why us",
+    "video": "Video",
+    "how": "How it works",
+    "faq": "FAQ",
+    "contacts": "Contacts",
+    "main": "Exchange",
+    "session": "Session"
+  },
+  "hero": {
+    "title": "Anonymous BTC mixer",
+    "description": "WashBit splits incoming bitcoin into dozens of routes, removes risky tags, and returns clean coins with no AML/KYC. Average cycle is 3–6 hours.",
+    "panelTitle": "Start cleaning",
+    "panelDescription": "We begin after 1 network confirmation. Add the addresses where the cleaned funds should arrive.",
+    "fromPlaceholder": "Main BTC payout address",
+    "additionalPlaceholder": "Second address (optional)",
+    "cta": "Start",
+    "splitButton": "Add second address",
+    "loading": "Starting session...",
+    "apiError": "Failed to start. Please try again.",
+    "note": "Minimum cleaning amount 0.005 BTC. Fee 3–7% + 0.0007 BTC network.",
+    "cleaningCaption": "Falling BTC gets scrubbed and comes out fresh."
+  },
+  "advantages": {
+    "title": "Why WashBit",
+    "items": [
+      {
+        "title": "Speed and control",
+        "description": "1 confirmation to start, manual risk review, and flexible fee for your privacy level."
+      },
+      {
+        "title": "Clean history",
+        "description": "Routes, splitting, and delays remove links to original addresses, reducing AML flags to a safe level."
+      },
+      {
+        "title": "Protection and privacy",
+        "description": "No KYC/AML, no IP or log storage, TOR and offline channels are available."
+      }
+    ]
+  },
+  "tor": {
+    "title": "TOR version",
+    "description": "Use the .onion mirror for maximum privacy."
+  },
+  "video": {
+    "title": "How WashBit works",
+    "fallback": "Your browser does not support HTML5 video."
+  },
+  "cleanCheck": {
+    "title": "Post-clean report",
+    "description": "Sample AML check after WashBit: risk removed, address ready to use.",
+    "alt": "Report after cleaning",
+    "actions": {
+      "expand": "Open full image",
+      "hover": "Hover to zoom"
+    }
+  },
+  "how": {
+    "title": "How does mixing work?",
+    "description": "The service accepts coins, splits them into many parts, sends them through different routes, and returns them to new addresses without linking to the original transactions.",
+    "steps": [
+      {
+        "title": "Receiving funds",
+        "description": "You send BTC to our deposit address. Only 1 block is needed to start."
+      },
+      {
+        "title": "Pool gathering",
+        "description": "Deposits from several clients are combined to break obvious links."
+      },
+      {
+        "title": "Splitting",
+        "description": "The amount is divided into dozens of fragments with different fees and time delays."
+      },
+      {
+        "title": "Different routes",
+        "description": "Parts go through separate chains and land in new blocks without repeating patterns."
+      },
+      {
+        "title": "Payout",
+        "description": "Clean coins go to the addresses you provide. You can split across several wallets."
+      },
+      {
+        "title": "Support",
+        "description": "Keep the session ID. It’s used to check status and get help."
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "What is WashBit?",
+        "answer": "A service for anonymous bitcoin exchange and cleaning. We remove risky tags and never require AML/KYC so your funds stay safe to use."
+      },
+      {
+        "question": "How many confirmations do you need?",
+        "answer": "Only 1 confirmation in the network, then splitting and mixing begin."
+      },
+      {
+        "question": "Do you keep logs?",
+        "answer": "No. We don’t store IPs, address databases, or KYC. Data is wiped after the session is finished."
+      },
+      {
+        "question": "How to contact support?",
+        "answer": "Write directly on Telegram: @washbitBot. Keep the session ID so we can help quickly."
+      },
+      {
+        "question": "What is the fee?",
+        "answer": "From 3 to 7% depending on delay and dispersion + 0.0007 BTC network fee."
+      },
+      {
+        "question": "What amounts do you handle?",
+        "answer": "Minimum 0.005 BTC. Maximum 50 BTC per session — larger can be split or agreed with support."
+      }
+    ]
+  },
+  "contacts": {
+    "title": "Contacts",
+    "description": "If you have questions about a session or need a consultation, write to us:",
+    "copied": "Copied"
+  },
+  "footer": {
+    "text": "© {{year}} WashBit — anonymous BTC mixer"
+  },
+  "mixResult": {
+    "minAmount": "Minimum cleaning amount 0.005 BTC",
+    "sendPrompt": "Send BTC to this address",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "supportHint": "Save the ID to check status with support:"
+  },
+  "example": {
+    "title": "Cleaning example",
+    "before": "Before",
+    "after": "After",
+    "beforeAlt": "Report before cleaning",
+    "afterAlt": "Report after cleaning"
+  }
+}

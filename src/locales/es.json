@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "tor": "Versión TOR",
+    "advantages": "Por qué nosotros",
+    "video": "Video",
+    "how": "Cómo funciona",
+    "faq": "FAQ",
+    "contacts": "Contactos",
+    "main": "Intercambio",
+    "session": "Sesión"
+  },
+  "hero": {
+    "title": "Mezclador BTC anónimo",
+    "description": "WashBit divide los bitcoins entrantes en decenas de rutas, elimina etiquetas de riesgo y devuelve monedas limpias sin AML/KYC. El ciclo promedio es de 3 a 6 horas.",
+    "panelTitle": "Iniciar limpieza",
+    "panelDescription": "Empezamos tras 1 confirmación de red. Añade las direcciones donde deben llegar los fondos limpios.",
+    "fromPlaceholder": "Dirección principal para retirar BTC",
+    "additionalPlaceholder": "Segunda dirección (opcional)",
+    "cta": "Comenzar",
+    "splitButton": "Agregar segunda dirección",
+    "loading": "Iniciando sesión...",
+    "apiError": "No se pudo iniciar. Inténtalo de nuevo.",
+    "note": "Monto mínimo de limpieza 0.005 BTC. Comisión 3–7% + 0.0007 BTC red.",
+    "cleaningCaption": "El BTC cae, se limpia y vuelve brillante."
+  },
+  "advantages": {
+    "title": "Por qué WashBit",
+    "items": [
+      {
+        "title": "Velocidad y control",
+        "description": "1 confirmación para empezar, revisión manual de riesgos y comisión flexible según tu nivel de privacidad."
+      },
+      {
+        "title": "Historial limpio",
+        "description": "Rutas, división y retrasos eliminan vínculos con las direcciones originales, bajando las alertas AML a un nivel seguro."
+      },
+      {
+        "title": "Protección y privacidad",
+        "description": "Sin KYC/AML, no guardamos IP ni registros. TOR y canales fuera de línea disponibles."
+      }
+    ]
+  },
+  "tor": {
+    "title": "Versión TOR",
+    "description": "Usa el dominio .onion cuando necesites máxima privacidad."
+  },
+  "video": {
+    "title": "Cómo funciona WashBit",
+    "fallback": "Tu navegador no soporta video HTML5."
+  },
+  "cleanCheck": {
+    "title": "Reporte tras la limpieza",
+    "description": "Ejemplo de análisis AML después de WashBit: riesgo eliminado, dirección lista para usar.",
+    "alt": "Reporte tras la limpieza",
+    "actions": {
+      "expand": "Abrir imagen completa",
+      "hover": "Pasa el cursor para ampliar"
+    }
+  },
+  "how": {
+    "title": "¿Cómo funciona el mezclado?",
+    "description": "El servicio recibe monedas, las divide en muchas partes, las envía por distintas rutas y las devuelve a nuevas direcciones sin vincular con las transacciones originales.",
+    "steps": [
+      {
+        "title": "Recepción de fondos",
+        "description": "Envías BTC a nuestra dirección de entrada. Solo se necesita 1 bloque para empezar."
+      },
+      {
+        "title": "Creación del pool",
+        "description": "Los depósitos de varios clientes se combinan para romper enlaces evidentes."
+      },
+      {
+        "title": "División",
+        "description": "El monto se divide en decenas de fragmentos con distintas comisiones y retrasos de tiempo."
+      },
+      {
+        "title": "Rutas distintas",
+        "description": "Las partes pasan por cadenas separadas y llegan a nuevos bloques sin patrones repetidos."
+      },
+      {
+        "title": "Retiro",
+        "description": "Las monedas limpias van a las direcciones que indiques. Puedes repartirlas en varias carteras."
+      },
+      {
+        "title": "Soporte",
+        "description": "Conserva el ID de sesión. Se usa para revisar estado y recibir ayuda."
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "¿Qué es WashBit?",
+        "answer": "Un servicio para intercambio y limpieza anónima de bitcoin. Eliminamos etiquetas de riesgo y nunca pedimos AML/KYC, para que tus fondos sean seguros de usar."
+      },
+      {
+        "question": "¿Cuántas confirmaciones se necesitan?",
+        "answer": "Solo 1 confirmación en la red; luego empieza la división y mezcla."
+      },
+      {
+        "question": "¿Guardan registros?",
+        "answer": "No. No almacenamos IP, bases de direcciones ni KYC. Los datos se eliminan al terminar la sesión."
+      },
+      {
+        "question": "¿Cómo contacto con soporte?",
+        "answer": "Escríbenos directamente en Telegram: @washbitBot. Guarda el ID de sesión para que podamos ayudarte rápido."
+      },
+      {
+        "question": "¿Cuál es la comisión?",
+        "answer": "De 3 a 7% según el retraso y la dispersión + 0.0007 BTC de red."
+      },
+      {
+        "question": "¿Qué montos manejan?",
+        "answer": "Mínimo 0.005 BTC. Máximo 50 BTC por sesión; montos mayores pueden dividirse o coordinarse con soporte."
+      }
+    ]
+  },
+  "contacts": {
+    "title": "Contactos",
+    "description": "Si tienes preguntas sobre la sesión o necesitas una consulta, escríbenos:",
+    "copied": "Copiado"
+  },
+  "footer": {
+    "text": "© {{year}} WashBit — mezclador BTC anónimo"
+  },
+  "mixResult": {
+    "minAmount": "Monto mínimo de limpieza 0.005 BTC",
+    "sendPrompt": "Envía BTC a esta dirección",
+    "copy": "Copiar",
+    "copied": "¡Copiado!",
+    "supportHint": "Guarda el ID para consultar el estado con soporte:"
+  },
+  "example": {
+    "title": "Ejemplo de limpieza",
+    "before": "Antes",
+    "after": "Después",
+    "beforeAlt": "Reporte antes de la limpieza",
+    "afterAlt": "Reporte después de la limpieza"
+  }
+}

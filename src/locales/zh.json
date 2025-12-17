@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "tor": "TOR 版本",
+    "advantages": "为什么选择我们",
+    "video": "演示视频",
+    "how": "流程",
+    "faq": "FAQ",
+    "contacts": "联系",
+    "main": "兑换",
+    "session": "会话"
+  },
+  "hero": {
+    "title": "匿名 BTC 混币",
+    "description": "WashBit 将收到的比特币拆分为多条路径，移除风险标签，无需 AML/KYC 即返回干净的币。平均周期 3–6 小时。",
+    "panelTitle": "开始清洗",
+    "panelDescription": "1 次网络确认后开始。填写需要接收清洗后资金的地址。",
+    "fromPlaceholder": "主要 BTC 提现地址",
+    "additionalPlaceholder": "第二个地址（可选）",
+    "cta": "开始",
+    "splitButton": "添加第二个地址",
+    "loading": "正在启动会话...",
+    "apiError": "启动失败，请重试。",
+    "note": "最低清洗金额 0.005 BTC。手续费 3–7% + 0.0007 BTC 网络费。",
+    "cleaningCaption": "比特币掉落、清洗，再以干净状态飞出。"
+  },
+  "advantages": {
+    "title": "为何选择 WashBit",
+    "items": [
+      {
+        "title": "速度与控制",
+        "description": "1 次确认即可开始，人工风险审查，手续费可按隐私需求灵活设置。"
+      },
+      {
+        "title": "干净历史",
+        "description": "路线、拆分与延时打断与原地址的关联，将 AML 标记降到安全水平。"
+      },
+      {
+        "title": "保护与隐私",
+        "description": "无 KYC/AML，不保存 IP 与日志，提供 TOR 和离线沟通渠道。"
+      }
+    ]
+  },
+  "tor": {
+    "title": "TOR 版本",
+    "description": "需要最大隐私时请使用 .onion 镜像。"
+  },
+  "video": {
+    "title": "WashBit 如何工作",
+    "fallback": "您的浏览器不支持 HTML5 视频。"
+  },
+  "cleanCheck": {
+    "title": "清洗后报告",
+    "description": "WashBit 后的 AML 示例：风险移除，地址可放心使用。",
+    "alt": "清洗后的报告",
+    "actions": {
+      "expand": "打开完整图片",
+      "hover": "悬停放大"
+    }
+  },
+  "how": {
+    "title": "混币流程",
+    "description": "服务接收币后拆分成多份，走不同路线，并返回到新的地址，避免与原交易产生关联。",
+    "steps": [
+      {
+        "title": "接收资金",
+        "description": "将 BTC 发送到我们的接收地址，仅需 1 个区块即可开始。"
+      },
+      {
+        "title": "汇聚池子",
+        "description": "多位客户的存款合并，打断明显的链上关联。"
+      },
+      {
+        "title": "拆分",
+        "description": "金额被拆为数十份，设置不同手续费与时间延迟。"
+      },
+      {
+        "title": "不同路由",
+        "description": "各部分走独立链路，进入新块且不重复模式。"
+      },
+      {
+        "title": "提现",
+        "description": "干净的币发送到你提供的地址，可分散到多个钱包。"
+      },
+      {
+        "title": "支持",
+        "description": "保存会话 ID，用于查询状态和获得帮助。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "什么是 WashBit？",
+        "answer": "匿名的比特币兑换与清洗服务。移除风险标签，不要求 AML/KYC，让你的资金更安全可用。"
+      },
+      {
+        "question": "需要多少次确认？",
+        "answer": "只需 1 次确认，随即开始拆分和混合。"
+      },
+      {
+        "question": "会保存日志吗？",
+        "answer": "不会。不保存 IP、地址库或 KYC，完成后会话数据即被清除。"
+      },
+      {
+        "question": "如何联系支持？",
+        "answer": "直接在 Telegram 联系：@washbitBot。保留会话 ID 便于快速处理。"
+      },
+      {
+        "question": "手续费是多少？",
+        "answer": "3–7%，取决于延时与分散程度，另加 0.0007 BTC 网络费。"
+      },
+      {
+        "question": "处理哪些金额？",
+        "answer": "最低 0.005 BTC。单次最高 50 BTC；更大金额可拆分或与支持协商。"
+      }
+    ]
+  },
+  "contacts": {
+    "title": "联系",
+    "description": "如果对会话有疑问或需要咨询，请联系我们：",
+    "copied": "已复制"
+  },
+  "footer": {
+    "text": "© {{year}} WashBit — 匿名 BTC 混币器"
+  },
+  "mixResult": {
+    "minAmount": "最低清洗金额 0.005 BTC",
+    "sendPrompt": "将 BTC 发送到此地址",
+    "copy": "复制",
+    "copied": "已复制！",
+    "supportHint": "保存此 ID 以便支持查询状态："
+  },
+  "example": {
+    "title": "清洗示例",
+    "before": "清洗前",
+    "after": "清洗后",
+    "beforeAlt": "清洗前报告",
+    "afterAlt": "清洗后报告"
+  }
+}

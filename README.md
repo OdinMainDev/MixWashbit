@@ -1,1 +1,1 @@
-# MixWashbit
+# WashBit Frontend
